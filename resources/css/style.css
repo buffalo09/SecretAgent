@@ -21,7 +21,7 @@ div {
     max-width: 960px;
 }
 
-.container img {
+.logo img {
     height: 1.5rem;
     padding-left: 0.5rem;
     padding-top: 0.33rem;
@@ -45,7 +45,7 @@ div {
 
 .container {
     max-width: 960px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .story {
@@ -71,17 +71,74 @@ h1 {
     color: white;
 }
 
-.nav .container {
-    display: flex;
-    max-width: 960px;
+nav {
+    background-color: firebrick;
+    color: white;
 }
 
-.container span {
-    padding-left: 3rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    font-weight: bold;
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.75rem;
 }
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+.product {
+    width: 30%;
+}
+
+.product-image {
+    border: 4px solid black;
+    padding: 2em 0;
+    height: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img {
+    border-style: none;
+    width: 50%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    background-color: black;
+    color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 0 0;
+}
+
+.info-box {
+    width: 35%;
+}
+
+.info-box .location {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+
+.info-box .hour {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+
 
 
 
