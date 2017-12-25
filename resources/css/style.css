@@ -1,3 +1,5 @@
+                        /*body*/
+
 body {
     line-height: 1.4em;
     font-family: Helvetica, sans-serif;
@@ -11,6 +13,12 @@ div {
     display: block;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+                       /*logo*/
 .logo {
     background-color: black;
     color: white;
@@ -34,6 +42,7 @@ div {
     padding-left: 1rem;
 }
 
+                      /*main*/
 .main {
     /*background-image: url("../images/moto.jpeg");*/
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
@@ -41,11 +50,6 @@ div {
     background-size: cover;
     background-position: center;
     height: 25rem;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 .story {
@@ -66,6 +70,13 @@ h1 {
     padding-top: 0.25rem;
 }
 
+@media only screen and (max-width: 470px) {
+    .main {
+        height: 15rem;
+    }
+}
+
+                     /*menu*/
 .nav {
     background-color: firebrick;
     color: white;
@@ -83,10 +94,27 @@ nav .container {
     padding: 0.75rem;
 }
 
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and  (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+                     /*products*/
 .products {
     display: flex;
     justify-content: space-between;
-    margin: 3em 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 .product {
@@ -115,6 +143,7 @@ nav .container {
     color: white;
 }
 
+                      /*info*/
 .info {
     display: flex;
     justify-content: space-between;
@@ -138,6 +167,20 @@ nav .container {
     color: white;
     padding: 1em 2em;
 }
+
+                       /*footer*/
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5em 0;
+    margin-top: 4em;
+}
+
+
+
+
+
+
 
 
 
